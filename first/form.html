@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>form for contact us</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body class="body">
+    <div class="container">
+         <form action="/server" style="display: flex; align-items: center; flex-direction: column;">
+            <div id="contact"><h3>Contact Us</h3></div>
+            <div class="firstrow">
+                <div> 
+                    <div style="margin-bottom: 7px;"><label for="firstName"> First Name</label></div>
+                    <div ><input type="text" name=" firstName" id="firstName" placeholder="Enter First Name" class="row1" ></div>
+                </div>
+                <div>
+                    <div style="margin-bottom: 7px;" > <label for="lastName"> Last Name</label></div>
+                    <div> <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name"  class="row1"></div>
+                </div>
+              </div>
+             <div style="margin-top: 1rem;">
+                    <div  style="margin-bottom: 7px;"> <label for="email">Email Address</label></div>
+                    <div> <input type="email" name="email" id="email" placeholder="Enter Your email "  class="row2"></div>
+             </div>
+              <div style="margin-top: 1rem;">
+                <div  style="margin-bottom: 7px;"> <label for="email">Subject</label></div>
+                     <div>
+                         <select name="subject" id="subject" class="row3">
+                              <option value="math"> Math</option>
+                              <option value="science"> Science</option>
+                              <option value="Other">Other</option>
+                         </select>
+                    </div>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div  style="margin-bottom: 7px;"><label for="textarea"> Your Message</label></div>
+                <div><textarea name="message" id="textarea"  rows="5" cols="69" class="row4" ></textarea></div>
+            </div>
+            <div >
+                <button class="button" type="submit" > Send message</button>
+            </div>
+ 
+         </form>
+    </div>
+</body>
+</html>
